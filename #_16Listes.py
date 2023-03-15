@@ -12,3 +12,17 @@ liste[A:B] affiche de l'élément d'indice A à l'indice B (avec B exclus)
 
 inventaire = ["arc", "fleche", "épée", "pistolet", "galil", "laser", "m14", "katana"]
 print(inventaire[-7:-3])
+
+print("index de fleche: {}".format(inventaire.index("fleche")))
+#la méthode sort permet de lister les éléments de la liste en ordre!
+#Soit en ordre croissant soit par ordre alphabétique!
+inventaire.sort()
+print(inventaire)
+del inventaire[0]
+print(inventaire)
+
+for x, y in enumerate(inventaire):
+	print(f"index: {x},\tvaleur: {y}")
+
+inventaire[:] = [] #vidage d'une liste!
+print(inventaire)
